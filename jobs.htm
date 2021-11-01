@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaJam Coffee House Jobs Page</title>
+    <link href="javajam.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <header><h1>JavaJam Coffee House</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="menu.htm">Menu</a></li>
+            <li><a href="music.htm">Music</a></li>
+            <li><a href="jobs.htm">Jobs</a></li>
+            <li><a href="gear.htm">Gear</a></li>
+        </ul>
+
+    </nav>
+    <main>
+      <p>Want to work at JavaJam?  Fill out the form below to start your application. Required fields are marked with an asterisk (*)</p>
+        <form method="post" action="http://localhost:8080/JavaJam">
+            <label for="myName">*Name:</label>
+            <input type="text" name="myName" id="myName" required="required" />
+            <label for="myEmail">*Email:</label>
+            <input type="email" name="myEmail" id="myEmail" required="required"/>
+            <label for="myExperience">*Experience:</label>
+            <textarea name="myExperience" id="myExperience" rows="2" cols="20" required="required"></textarea>
+            <input type="submit" value="Apply Now" id="mySubmit" />
+        </form>
+     </main>
+        <br />
+    <footer>Copyright &copy; 2014 JavaJam Coffee House<br /><a href="mailto:Jeremy@Strange.net">Jeremy@Strange.net</a></footer>
+</body>
+</html>
